@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUMA SHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+
+   <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container1">
+          <a class="navbar-brand" href="index.html">
+            <img src="Images/shopping-bag-icon.png" alt="site icon" />
+            <span class="text-uppercase fw-lighter ms-2">Shudipta</span>
+          </a>
+  
+          <div class="">
+            <button type="button" class="btn position-relative">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge bg-clr">5</span>
+            </button>
+            <button type="button" class="btn position-relative">
+              <i class="fa fa-heart"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge bg-clr">5</span>
+            </button>
+            <button type="button" class="btn position-relative">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+   </div>
+   
+
+<div>
+  
+    <div class="container">
+       <h1 class="h1">Puma Store</h1>
+
+       <div class="card">
+        <div class="card-image">
+            <img src="images/BMW-M-Motorsport-LGND-Livery-Motorsport-Shoes.webp" class="img" alt="">
+        </div>
+        <div class="card-tittle">
+              <h3>puma stylish</h3>
+              <h3>Size : 44'</h3>
+              <h3 class="price">Price TK: <span id="price" >1200 </span></h3>
+
+              <i class="fa-solid fa-plus icon" onclick="increment('count','price','item')"></i>
+              <input class="input" type="button" id="count" value="0">
+              <i class="fa-solid fa-minus icon" onclick="decrement('count','price','item')"></i>
+              <span class="item">Your Items TK <span id="item" >00 </span> </span>
+        </div>
+       </div>
+      
+       <div class="clear"></div>
+       <hr class="hr-style">
+       
+       <div class="card">
+        <div class="card-image">
+            <img src="images/Mirage-Sport-Tech-Fandom-Evolution-Sneakers.webp" class="img" alt="">
+        </div>
+        <div class="card-tittle">
+              <h3>puma best</h3>
+              <h3>Size : 42'</h3>
+              <h3 class="price">Price TK: <span id="price1">1800 </span> </h3>
+
+              <i class="fa-solid fa-plus icon" onclick="increment('count1','price1','item1')"></i>
+              <input class="input" id="count1"type="button" value="0">
+              <i class="fa-solid fa-minus icon" onclick="decrement('count1','price1','item1')"></i>
+              <span class="item">Your Items TK <span id="item1">00 </span> </span>
+        </div>
+       </div>
+       <div class="clear"></div>
+       <hr class="hr-style">
+       
+       <div class="card">
+        <div class="card-image">
+            <img src="images/BMW-M-Motorsport-RDG-Cat-Motorsport-Shoes.webp" class="img" alt="">
+        </div>
+        <div class="card-tittle">
+              <h3>puma super</h3>
+              <h3>Size : 43'</h3>
+              <h3 class="price">Price TK: <span id="price2">19000 </span></h3>
+
+              <i class="fa-solid fa-plus icon" onclick="increment('count2','price2','item2')"></i>
+              <input class="input" id="count2" type="button" value="0">
+              <i class="fa-solid fa-minus icon" onclick="decrement('count2','price2','item2')"></i>
+              <span class="item">Your Items TK <span id="item2">00 </span> </span>
+        </div>
+       </div>
+       
+    </div>
+
+    <div class="fixed">
+           <h1 class="total">The total ammount of</h1>
+           <h2>Product Ammount : TK <span id="pr_ammount">00</span></h2>
+           <h2>Delivery Charge : TK <span id="charge">80</span></h2>
+           ------------------------------------------------------------------------------------
+           <h2>Total Product Ammount :TK <span id="total_ammount">00</span></h2>
+           <hr><br><br><br>
+           <div class="kupon" id="kupon_main">
+                <h4 class="kupon">Kupon Code with 100 tk less</h4><br>
+                <h4 class="code">Your code is : Shudipta</h4>
+                <input class="kuponinput" id="kuponInput" type="text" placeholder="Your kupon code..."><br><br>
+                <button class="apply" id = "applybtn">Apply</button>
+           </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!--jquery-->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <!--boostrap js-->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!--custom js-->
+    <script src="js/script.js"></script>
+     
+</body>
+</html>
